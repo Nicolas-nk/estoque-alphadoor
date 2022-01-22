@@ -15,8 +15,8 @@ const index = require('./routes/index');
 
 const suppllierRoute = require('./routes/supplier.routes');
 const productRoute = require('./routes/product.routes');
-const catpRoute = require('./routes/product.routes');
-const unmtRoute = require('./routes/product.routes');
+const catpRoute = require('./routes/catp.routes');
+const unmtRoute = require('./routes/unm.routes');
 const inputRoute = require('./routes/input.routes');
 const outputRoute = require('./routes/output.routes');
 

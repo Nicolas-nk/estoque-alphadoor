@@ -1,6 +1,6 @@
 /**
  * arquivo: config/database.js
- * descrição: arquivo responsável pelas 'connectionStrings'
+ * descrição: arquivo responsável pela conexão com o banco de dados
  * data: 22/01/22
  * autor: Nicolas Messias
  */
