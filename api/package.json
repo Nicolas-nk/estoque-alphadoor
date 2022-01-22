@@ -4,15 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev":"nodemon",
-    "start":"node server.js"
+    "dev": "nodemon",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Nicolas Messias",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.7.0",
     "husky": "^7.0.4",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "cors": "^2.8.5",
