@@ -2,11 +2,23 @@
   "name": "api-estoque-alphadoor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev":"nodemon",
+    "start":"node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Nicolas Messias",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^13.0.0",
+    "express": "^4.17.2",
+    "express-promise-router": "^4.1.1",
+    "mysql2": "^2.3.3"
+  }
 }
