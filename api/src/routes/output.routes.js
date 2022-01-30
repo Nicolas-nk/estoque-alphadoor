@@ -1,5 +1,5 @@
 /**
- * arquivo: controllers/supplier.controller.js
+ * arquivo: routes/output.routes.js
  * descrição: arquivo responsável pelas rotas da API de saidas/vendas
  * data: 22/01/22
  * autor: Nicolas Messias
@@ -10,6 +10,7 @@
 
  //definindo rotas
 
- //rota responsável por criar uma nova 'saida'
+//rota responsável por criar uma nova 'saida' (POST): localhost:3000/api//output
+outputRoute.post('/output', outputController.createOutput);
 
  module.exports = outputRoute;

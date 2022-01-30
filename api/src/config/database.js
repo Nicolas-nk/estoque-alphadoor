@@ -15,9 +15,10 @@ const pool = mysql.createPool({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
   user: process.env.DB_USER,
-  password: process.env.DB_USER,
-  database: process.env.DB_NAME,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME
 });
+
 
 pool.on('error', function () {
     console.log('Problema inesperado na conexão com o banco de dados!');

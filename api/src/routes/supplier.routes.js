@@ -1,5 +1,5 @@
 /**
- * arquivo: controllers/supplier.controller.js
+ * arquivo: routes/supplier.routes.js
  * descrição: arquivo responsável pelas rotas da API de fornecedor
  * data: 22/01/22
  * autor: Nicolas Messias
@@ -10,6 +10,7 @@
 
  //definindo rotas
 
- //rota responsável por criar um novo 'fornecedor'
+ //rota responsável por criar um novo 'fornecedor' (POST): localhost:3000/api/supplier
+ suppllierRoute.post('/supplier', supplierController.createSupplier);
 
  module.exports = suppllierRoute;
