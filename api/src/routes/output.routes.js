@@ -13,4 +13,7 @@
 //rota responsável por criar uma nova 'saida' (POST): localhost:3000/api//output
 outputRoute.post('/output', outputController.createOutput);
 
+//rota responsável por listar todas as 'saidas' (POST): localhost:3000/api//output
+outputRoute.get('/output', outputController.listAllOutputs);
+
  module.exports = outputRoute;

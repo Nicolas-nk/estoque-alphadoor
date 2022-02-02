@@ -11,7 +11,7 @@ const db = require("../config/database");
 exports.createProduct = async (req, res) => {
   const { cod_produto, nome_produto, especificacao_produto, cor, estoque_min, custo, preco,cod_un_medida, cod_categoria } = req.body;
   let SQL =
-    "INSERT INTO fornecedor (cod_produto, nome_produto, especificacao_produto, cor, estoque_min, custo, preco,cod_un_medida, cod_categoria) VALUES (UUID_SHORT(),?,?,?,?,?,?,?,?)";
+    "INSERT INTO produto (cod_produto, nome_produto, especificacao_produto, cor, estoque_min, custo, preco,cod_un_medida, cod_categoria) VALUES (UUID_SHORT(),?,?,?,?,?,?,?,?)";
 
   db.query(SQL, [nome_produto, especificacao_produto, cor, estoque_min, custo, preco,cod_un_medida, cod_categoria]);
 
@@ -22,3 +22,12 @@ exports.createProduct = async (req, res) => {
     },
   });
 };
+
+//Método respónsavel por listar todos os produtos
+exports.listAllProducts = async(req, res) => {
+  let SQL = ('SELECT * FROM produto');
+  
+  db.query(SQL, (err, result) =>{
+      res.status(200).send(result)
+  })
+}

@@ -13,4 +13,7 @@
 //rota responsável por criar uma nova 'entrada' (POST): localhost:3000/api/input
 inputRoute.post('/input', inputController.createInput);
 
+//rota responsável por listar todas as 'entradas' (GET): localhost:3000/api/input
+inputRoute.get('/input', inputController.listAllInputs);
+
  module.exports = inputRoute;

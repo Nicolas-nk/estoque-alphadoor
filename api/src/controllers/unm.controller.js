@@ -21,3 +21,12 @@
          }
      })
  };
+
+ //Método respónsavel por listar todos os fornecedores
+exports.listAllUnm = async(req, res) => {
+    let SQL = ('SELECT * FROM un_medida');
+    
+    db.query(SQL, (err, result) =>{
+        res.status(200).send(result)
+    })
+}

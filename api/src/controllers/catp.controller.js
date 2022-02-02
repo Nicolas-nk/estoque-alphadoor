@@ -21,3 +21,12 @@
          }
      })
  };
+
+ //Método respónsavel por listar todas as categorias
+exports.listAllCatp = async(req, res) => {
+    let SQL = ('SELECT * FROM cat_produto');
+    
+    db.query(SQL, (err, result) =>{
+        res.status(200).send(result)
+    })
+}

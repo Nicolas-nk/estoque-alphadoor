@@ -21,3 +21,12 @@ exports.createSupplier = async(req, res) => {
         }
     })
 };
+
+//Método respónsavel por listar todos os fornecedores
+exports.listAllSuppliers = async(req, res) => {
+    let SQL = ('SELECT * FROM fornecedor');
+    
+    db.query(SQL, (err, result) =>{
+        res.status(200).send(result)
+    })
+}

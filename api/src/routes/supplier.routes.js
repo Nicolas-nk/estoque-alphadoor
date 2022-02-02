@@ -13,4 +13,7 @@
  //rota responsável por criar um novo 'fornecedor' (POST): localhost:3000/api/supplier
  suppllierRoute.post('/supplier', supplierController.createSupplier);
 
+ //rota responsável por listar todos os 'fornecedores' (GET): localhost:3000/api/supplier
+ suppllierRoute.get('/supplier', supplierController.listAllSuppliers);
+
  module.exports = suppllierRoute;

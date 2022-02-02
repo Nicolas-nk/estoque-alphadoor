@@ -13,4 +13,7 @@
 //rota responsável por criar um novo 'produto' (POST): localhost:3000/api/product
 productRoute.post('/product', productController.createProduct);
 
+//rota responsável por listar todos os 'produtos' (POST): localhost:3000/api/product
+productRoute.get('/product', productController.listAllProducts);
+
  module.exports = productRoute;

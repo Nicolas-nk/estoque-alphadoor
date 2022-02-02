@@ -13,4 +13,7 @@
 //rota responsável por criar uma nova 'unidade de medida' (POST): localhost:3000/api/unm
 unmtRoute.post('/unm', unmController.createUnm);
 
+//rota responsável por listar todas as 'unidades de medida' (POST): localhost:3000/api/unm
+unmtRoute.get('/unm', unmController.listAllUnm);
+
  module.exports = unmtRoute;
